@@ -17,7 +17,7 @@
     <p align="center">
         <a href="https://img.shields.io/github/downloads/ZTatman/Leetcode/total">Downloads</a>
         .
-        <a href="(https://img.shields.io/github/forks/ZTatman/Leetcode?style=social">Forks</a>
+        <a href="https://img.shields.io/github/forks/ZTatman/Leetcode?style=social">Forks</a>
         .
         <a href="https://img.shields.io/github/stars/ZTatman/Leetcode?style=social">Stargazers</a>
     </p>
