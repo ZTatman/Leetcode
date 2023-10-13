@@ -14,22 +14,22 @@ Given two strings str1 and str2, return the largest string x such that x divides
 
 **Example 1**:
 
-Input: str1 = "ABCABC", str2 = "ABC"
+Input: str1 = "ABCABC", str2 = "ABC"  
 Output: "ABC"
 
 **Example 2**:
 
-Input: str1 = "ABABAB", str2 = "ABAB"
+Input: str1 = "ABABAB", str2 = "ABAB"  
 Output: "AB"
 
 **Example 3**:
 
-Input: str1 = "LEET", str2 = "CODE"
+Input: str1 = "LEET", str2 = "CODE"  
 Output: ""
 
 **Example 4**:
 
-Input: str1 = "ABAB", str2 = "ABC"
+Input: str1 = "ABAB", str2 = "ABC"  
 Output: "AB"
 
 
@@ -74,7 +74,6 @@ Or I could do a while loop instead of nested for loop
 
 ### My Solution
 
-#### Javascript
 ```javascript
 /**
  * @param {string} str1
@@ -115,6 +114,7 @@ so this was my best attempt.
 
 
 ### Alternate Solutions
+...
 ---
 #### 1. Euclid's Algorithm
 * [Main Source](https://sites.math.rutgers.edu/~greenfie/gs2004/euclid.html#:~:text=The%20Euclidean%20algorithm%20is%20a,%3D1%C2%B730%2B15.)

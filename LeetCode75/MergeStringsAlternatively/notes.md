@@ -1,6 +1,6 @@
-#### 1768. Merge Strings Alternately
+# 1768. Merge Strings Alternately
 
-##### Summary
+## Summary
 Given two words **w1** and **w2** (each of a minimum length of 1 character),
 *merge* them together into one word by adding the letters from each word together in an alternating fashion.
 
@@ -17,7 +17,7 @@ merged = "cdaotg"
 If one word is longer than the other, append the rest of its characters after merging the alternating characters first.
 
 
-##### Initial Approach:
+## Initial Approach:
 
 I am thinking I can use just one pointer index to visit each character in both words.  
 Ideally, I will use index i and traverse until the lenght of the longest word. So if w1 length is 3 and w2 length is 5,  
@@ -27,7 +27,7 @@ This means i need to check before appending characters to result that at some in
 a character to be appended.
 
 
-###### Psuedo Code
+### Psuedo Code
 
 ```javascript
 function (w1 , w2) {
@@ -47,7 +47,7 @@ for(idx = 0; i < lengthOfLongestWord; idx++)
 ```
 
 
-###### My Solution
+### My Solution
 
 
 ```javascript
