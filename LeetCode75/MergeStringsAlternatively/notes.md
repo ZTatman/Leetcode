@@ -1,6 +1,6 @@
 # 1768. Merge Strings Alternately
 
-## Summary
+## The Problem
 Given two words **w1** and **w2** (each of a minimum length of 1 character),
 *merge* them together into one word by adding the letters from each word together in an alternating fashion.
 
