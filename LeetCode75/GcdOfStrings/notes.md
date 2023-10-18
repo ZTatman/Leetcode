@@ -2,6 +2,14 @@
 # 1071. Greatest Common Divisor of Strings
 
 
+1. [Summary](#summary)
+2. [Initial Approach:](#initial-approach:)
+   * [Psuedo Code](#psuedo-code)
+   * [My Solution](#my-solution)
+3. [Approach](#approach)
+    * [My Understanding Of This Approach](#my-understanding-of-this-approach)
+    * [Solution](#solution)
+
 ## Summary
 
 
@@ -114,8 +122,6 @@ so this was my best attempt.
 
 
 ### Alternate Solutions
-...
----
 #### 1. Euclid's Algorithm
 * [Main Source](https://sites.math.rutgers.edu/~greenfie/gs2004/euclid.html#:~:text=The%20Euclidean%20algorithm%20is%20a,%3D1%C2%B730%2B15.)
 * [Formal Proof](https://www.cut-the-knot.org/blue/Euclid.shtml)
@@ -204,8 +210,6 @@ var gcdOfStrings = function(str1, str2) {
 };
 ```
 
-
-##### Complexity
 **Time complexity**: O(log(min(n,k)))  
 Because here n is the length of str1 and k is the length of str2.
 This is because the time complexity of the gcds function, which implements the Euclidean algorithm for finding the greatest common divisor (GCD) of two numbers, is O(log(min(x, y))), where x and y are the two input numbers.  

@@ -1,5 +1,10 @@
 # 1768. Merge Strings Alternately
 
+
+1. [The Problem](#the-problem)
+2. [Initial Approach:](#initial-approach:)
+   * [Psuedo Code](#psuedo-code)
+   * [My Solution](#my-solution)
 ## The Problem
 Given two words **w1** and **w2** (each of a minimum length of 1 character),
 *merge* them together into one word by adding the letters from each word together in an alternating fashion.
