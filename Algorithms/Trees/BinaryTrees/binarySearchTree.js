@@ -17,17 +17,18 @@ class BinaryTree {
     }
 
     insert(value) {
+        let newNode = new Node(value);
         if (this.isEmpty()) {
-            this.head = new Node(value);
+            this.root = newNode;
         }
         else {
-            this.insertNode(this.root, new Node(value))
+            this.insertNode(this.root, newNode)
         }
     }
 
     insertNode(node, nodeToInsert) {
         // left sub-tree
-        if (nodeToInsert.val < node.val) {
+        if (nodeToInsert.value < node.value) {
             if (node.left === null) {
                 node.left = nodeToInsert;
             }
@@ -36,7 +37,7 @@ class BinaryTree {
             }
         }
         // right sub-tree
-        if (nodeToInsert.val > node.val) {
+        if (nodeToInsert.value > node.value) {
             if (node.right === null) {
                 node.right = nodeToInsert;
             }
@@ -92,6 +93,30 @@ class BinaryTree {
         this.postOrder(node.right);
         console.log(node.value);
     }
+
+    depthFirstTraversal() {
+        let result = [];
+        let s = [this.root];
+
+        while (s.length > 0) {
+            let node = s.pop();
+            result.push(node);
+            console.log("... visiting ", node.value);
+            if (node.right) s.push(node.right);
+            if (node.left) s.push(node.left);
+        };
+    }
+
+    depthFirstTraversalRecursive() {
+        return this.dfsRecursive(this.root);
+    }
+
+    dfsRecursive(node) {
+        if(node == null) return [];
+        let left = this.dfsRecursive(node.left);
+        let right = this.dfsRecursive(node.right);
+        return [node.value, ...left, ...right];
+    }
 }
 
 
@@ -102,8 +127,11 @@ tree.insert(38);
 tree.insert(1);
 tree.insert(54);
 
-console.log(tree.getMinNode());
-
-tree.inOrderTraversal();
-tree.preOrderTraversal();
-tree.postOrderTraversal();
+// console.log(tree.getMinNode());
+//
+// tree.inOrderTraversal();
+// tree.preOrderTraversal();
+// tree.postOrderTraversal();
+console.log("tree: \n");
+tree.preOrderTraversal()
+console.log(tree.depthFirstTraversalRecursive());
